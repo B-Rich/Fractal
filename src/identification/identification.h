@@ -1,6 +1,7 @@
 /*
 ** Machine learning ideas / algorithms used to identify characters defined here
 */
+#include <cv.h>
 
 /* Macros */
 
