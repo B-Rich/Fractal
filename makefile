@@ -6,9 +6,9 @@ IDENTSRC = ./src/identification/
 
 all: fractal
 
-fractal: fractal.c
+fractal: fractal.cpp
 	@echo Building Project...
-	gcc $(PREPROCSRC)*.c $(IDENTSRC)*.c fractal.c $(CFLAGS) $(LIBS) -o fractal
+	g++ $(PREPROCSRC)*.cpp $(IDENTSRC)*.cpp fractal.cpp $(CFLAGS) $(LIBS) -o fractal
 
 clean:
 	rm fractal
