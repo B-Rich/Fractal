@@ -1,5 +1,6 @@
 #include <iostream>
 #include <cv.h>
+#include <highgui.h>
 #include "src/preprocessing/preprocessing.h"
 #include "src/identification/identification.h"
 using namespace cv;
@@ -21,12 +22,13 @@ int main (int argc, char **argv)
 	}	
 
 	/* Local Variables */
+	Mat img = imread (argv[1],0);
 
 	/*Initialize Variables */
 
 
 	/* Pre-process given image */
-
+	cout << "Skew angle: " << get_skew_angle(img) << endl;
 
 	return 0;
 }

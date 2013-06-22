@@ -10,5 +10,9 @@ fractal: fractal.cpp
 	@echo Building Project...
 	g++ $(PREPROCSRC)*.cpp $(IDENTSRC)*.cpp fractal.cpp $(CFLAGS) $(LIBS) -o fractal
 
+test: test.cpp
+	@echo Building Project...
+	g++ $(PREPROCSRC)*.cpp $(IDENTSRC)*.cpp test.cpp $(CFLAGS) $(LIBS) -o fractal
+
 clean:
 	rm fractal
