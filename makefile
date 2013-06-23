@@ -16,7 +16,7 @@ debug: fractal.cpp
 
 test: test.cpp
 	@echo Building Project...
-	g++ $(PREPROCSRC)*.cpp $(IDENTSRC)*.cpp test.cpp $(CFLAGS) $(LIBS) -g -o fractal
+	g++ $(PREPROCSRC)*.cpp $(IDENTSRC)*.cpp test.cpp $(CFLAGS) $(LIBS) -g -o fractal.test
 
 clean:
 	rm fractal
